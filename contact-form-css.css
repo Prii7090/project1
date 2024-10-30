@@ -1,0 +1,95 @@
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;900&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #e0f7fa;
+}
+
+header {
+    background-color: #00796b;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    animation: lightning 1.5s infinite alternate;
+}
+
+main {
+    padding: 2rem;
+    max-width: 600px;
+    margin: 60px auto 0;
+}
+
+form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 2px dashed #00796b; /* Dashed border for the form */
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #00796b;
+    border-radius: 3px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: red; /* Updated button background color to red */
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: orange;
+}
+
+footer {
+    background: #00796b;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@keyframes lightning {
+    0%, 100% {
+        text-shadow: 
+            0 0 10px rgba(255, 255, 255, 0.8),
+            0 0 20px rgba(255, 255, 0, 0.5),
+            0 0 30px rgba(255, 255, 0, 0.3);
+    }
+    50% {
+        text-shadow: 
+            0 0 20px rgba(255, 255, 255, 1),
+            0 0 40px rgba(255, 255, 0, 1),
+            0 0 50px rgba(255, 255, 0, 0.8);
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 1rem;
+    }
+}
